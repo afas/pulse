@@ -1,0 +1,22 @@
+<div class="content-normal-width">
+  <h2>Мои публикации</h2>
+  <ul class="bucket-publications">
+    <% @publications.each do |publication| %>
+        <li>
+          <div class="bucket-item">
+            <span>
+              <%= content_tag :b, publication.author.fullname %> разместил <%= content_tag :b, Type.by_code(publication.publication_type) %> в категории <%= content_tag :b, Category.by_code(publication.category) %>
+            </span>
+            <h2>
+              <%= link_to publication.title, publication %>
+            </h2>
+
+            <span>
+              <%= publication.subtitle %>
+            </span>
+            <br/>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+</div>

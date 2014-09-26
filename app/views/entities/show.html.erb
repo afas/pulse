@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pulse:</strong>
+  <%= @entity.pulse_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entity.name %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @entity.fullname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @entity.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @entity.description %>
+</p>
+
+<%= link_to 'Edit', edit_entity_path(@entity) %> |
+<%= link_to 'Back', entities_path %>

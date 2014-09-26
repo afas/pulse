@@ -1,0 +1,31 @@
+<div class="more-selectors">
+  <div id="scale">
+    <div class="link">
+      <span>Региональные</span>
+    </div>
+    <div class="scale-list">
+      <h3>Масштаб</h3>
+      <ul id="scale-list">
+        <% Scale.collection.each do |scale| %>
+            <%= content_tag :li, link_to(scale.name, "#") %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div id="region">
+    <div class="link">
+      <span>Кострома</span>
+    </div>
+    <div class="region-list">
+      <h3>Регион</h3>
+      <ul id="region-list">
+        <% Region.collection.each do |region| %>
+            <%= content_tag :li, link_to(region.name, "#") %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

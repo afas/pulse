@@ -1,0 +1,101 @@
+<%= form_for(@publication, :html => { :multipart => true }) do |f| %>
+    <% if @publication.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@publication.errors.count, "error") %> prohibited this publication from being saved:</h2>
+
+          <ul>
+            <% @publication.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <!--<div class="field">-->
+      <%#= f.label :scale %>
+      <%#= f.collection_select(:scale, Scale.collection, :code, :name, :selected => 2) %>
+    <!--</div>-->
+    <div class="field">
+      <%= f.label :region %>
+      <%= f.collection_select(:region, Region.collection, :code, :name, :selected => 44) %>
+    </div>
+    <div class="field">
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </div>
+    <div class="field">
+      <%= f.label :date_start %>
+      <%= f.date_select :date_start %>
+    </div>
+    <div class="field">
+      <%= f.label :time_start %>
+      <%= f.time_select :time_start %>
+    </div>
+    <!--<div class="field">-->
+      <%#= f.label :date_end %>
+      <%#= f.datetime_select :date_end %>
+    <!--</div>-->
+    <div class="field">
+      <%= f.label :author_id %>
+      <% if @publication.new_record? %>
+          <%= f.collection_select(:author_id, User.all, :id, :email, :value => current_user.id, :promt => false) unless current_user.nil? %>
+      <% else %>
+          <%= f.collection_select(:author_id, User.all, :id, :email, :promt => false) %>
+      <% end %>
+    </div>
+
+    <div class="field">
+      <%= f.label :date_publish %>
+      <%= f.datetime_select :date_publish %>
+    </div>
+    <div class="field">
+      <%= f.label :date_archive %>
+      <%= f.datetime_select :date_archive %>
+    </div>
+    <div class="field">
+      <%= f.label :publisher_id %>
+      <%= f.collection_select(:publisher_id, Entity.all, :id, :name) %>
+    </div>
+    <div class="field">
+      <%= f.label :publication_type %>
+      <%= f.collection_select(:publication_type, Type.collection, :code, :name) %>
+    </div>
+    <div class="field">
+      <%= f.label :category %>
+      <%= f.collection_select(:category, Category.collection, :code, :name) %>
+    </div>
+
+    <%= f.fields_for :publication_attachments do |p| %>
+        <div class="field">
+          <%= p.label :image %>
+          <%= p.file_field :image, :multiple => true, name: "publication_attachments[image][]" %>
+        </div>
+    <% end %>
+
+    <%= f.fields_for :service_datums do |p| %>
+        <div class="field">
+          <%= p.label :image %>
+          <%= p.file_field :image, :multiple => true, name: "service_datums[image][]" %>
+        </div>
+    <% end %>
+
+    <div class="field without-label">
+      <%= f.text_area :title, :class => :title %>
+    </div>
+    <div class="field without-label">
+      <%= f.text_area :subtitle, :class => :subtitle %>
+    </div>
+    <div class="field without-label">
+      <%= f.text_area :body, :class => :body %>
+    </div>
+    <div class="field without-label">
+      <%= f.text_area :comment, :class => :body %>
+    </div>
+    <div class="field">
+      <%= f.label :publication_status %>
+      <%= f.collection_select(:publication_status, Status.collection(current_user.editor?), :code, :name) %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

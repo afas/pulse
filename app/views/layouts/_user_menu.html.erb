@@ -1,0 +1,17 @@
+<ul class="user-menu">
+  <% if user_signed_in? %>
+      <li><%= link_to current_user.email, "/users/edit" %></li>
+      <li><%= link_to 'Создать публикацию', new_publication_path %></li>
+      <li><%= link_to 'Редактировать публикацию', edit_publication_path(@publication) if action_name != "edit" && action_name != "new" && !@publication.nil? && can?(:edit, Publication) %></li>
+      <li><%= link_to 'Мои публикации', user_publications_path(current_user.id) %></li>
+      <li><%= link_to 'Мои черновики', user_drafts_path(current_user.id) %></li>
+      <li><%= link_to 'Подготовленные', user_ready_path(current_user.id) %></li>
+      <li><%= link_to 'Отвергнутые', user_rejected_path(current_user.id) %></li>
+      <li><%= link_to 'Редактировать страницу', edit_page_path(@page) if action_name != "edit" && action_name != "new" && !@page.nil? && can?(:edit, Page) %></li>
+      <!--<li><%#= link_to 'Мои подписки', '#' %></li>-->
+      <li><%= link_to "#{t("devise.actions.sign_out")}", destroy_user_session_path, :method => :delete %></li>
+  <% else %>
+      <li><%= link_to t("devise.actions.sign_in"), new_user_session_path %></li>
+      <%#= link_to t("devise.actions.sign_up"), new_user_registration_path %>
+  <% end %>
+</ul>

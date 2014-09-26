@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pulse_id: 1
+  name: MyString
+  fullname: MyString
+  address: MyString
+  description: MyText
+
+two:
+  pulse_id: 1
+  name: MyString
+  fullname: MyString
+  address: MyString
+  description: MyText

@@ -1,0 +1,34 @@
+<div class="content-normal-width">
+  <ul class="bucket-publications">
+    <% @publications.each do |publication| %>
+        <li>
+          <div class="bucket-item">
+            <span class="top">
+              <%= content_tag :b, publication.date_publish.strftime('%Y.%m.%d в %H:%M') %>
+              , <%= content_tag :b, publication.author.fullname %>
+              разместил <%= content_tag :b, Type.by_code(publication.publication_type) %>
+              в категории <%= content_tag :b, Category.by_code(publication.category) %>
+            </span>
+
+            <h2>
+              <%= link_to publication.title, publication %>
+            </h2>
+
+            <span>
+              <%= publication.subtitle %>
+            </span>
+          </div><% unless publication.publication_attachments.empty? %><img class="lazy" data-original="<%= publication.publication_attachments.first.image_url %>" alt="" /><% end %>
+          <%#= image_tag(publication.publication_attachments.first.image_url, class: "lazy") unless publication.publication_attachments.empty? %>
+        </li>
+    <% end %>
+    <%#= will_paginate @publications, renderer: BootstrapPagination::Rails %>
+  </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("img.lazy").lazyload({
+            event: "scrollstop"
+        });
+    });
+</script>

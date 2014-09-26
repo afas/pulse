@@ -1,0 +1,29 @@
+<%= form_for(@publication_attachment) do |f| %>
+  <% if @publication_attachment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publication_attachment.errors.count, "error") %> prohibited this publication_attachment from being saved:</h2>
+
+      <ul>
+      <% @publication_attachment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :publication_id %><br>
+    <%= f.number_field :publication_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

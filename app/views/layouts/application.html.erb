@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BigFish</title>
+  <%= stylesheet_link_tag "application" %>
+  <%#= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application" %>
+  <%#= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="cbp-spmenu-push">
+<nav class="site-nav cbp-spmenu" id="site-nav">
+  <%= render 'layouts/type_list' %>
+  <hr/>
+  <%= render 'layouts/user_menu' %>
+</nav>
+
+<div class="content-container" id="content-container">
+  <div class="header-container">
+
+    <div id="region">
+      <div class="link">
+        <span>Кострома</span>
+      </div>
+      <div class="region-list">
+        <ul id="region-list">
+          <% Region.collection.each do |region| %>
+              <%= content_tag :li, link_to(region.name, "#") %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div id="logo">
+      <%= link_to t("site_name"), root_path %>
+    </div>
+
+    <%= render 'layouts/category_list' %>
+
+    <div class="content-normal-width header-height-spacer">
+      <%#= render 'layouts/more_selectors' %>
+    </div>
+  </div>
+
+  <%= yield %>
+
+  <div class="footer-container">
+    <div class="footer">
+      <%= render 'layouts/footer_links' %>
+
+      © 2014 <b>Зеркало событий.</b> Региональное интернет-издание: анонсы, события, обзоры.<br/>
+      Использование материалов разрешено только с предварительного согласия правообладателей.<br/>
+      Все права на изображения и тексты размещенные на сайте принадлежат редакции.<br/>
+      Сайт может содержать контент, не предназначенный для лиц младше <b>16-ти лет.</b><br/>
+
+      Редакция - <b><%= link_to "ЗАО МОДИС", "http://sistems.ru", target: "_blank" %></b>, Лицензия СМИ -
+      <b>СИС ПУЛЬС ЭЛ №ФС77-33292 от 2 октября 2008 г.</b>
+
+      <div class="bottom-menu">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

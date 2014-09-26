@@ -1,0 +1,14 @@
+<div class="content-normal-width">
+  <h1>Организации</h1>
+  <table>
+    <% @entities.each do |entity| %>
+        <tr>
+          <td><b><%= entity.name %></b><br/>
+            <%= entity.fullname %></td>
+          <td><%= entity.description %></td>
+          <td><%= entity.address %></td>
+          <td><%= entity.pulse_id %>/<%= link_to 'Show', entity %>/<%= link_to 'Edit', edit_entity_path(entity) %>/<%= link_to 'Destroy', entity, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

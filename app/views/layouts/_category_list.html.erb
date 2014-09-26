@@ -1,0 +1,7 @@
+<ul class="category-list">
+  <%= content_tag :li, image_tag("menu-link.png", alt: "Раскрыть меню"), id: "show-nav" %>
+  <%= content_tag :li, image_tag("find.png", alt: "Поиск"), id: "show-find" %>
+  <% Category.collection.each do |category| %>
+      <%= content_tag :li, link_to(category.name, "#") %>
+  <% end %>
+</ul>

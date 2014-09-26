@@ -1,0 +1,23 @@
+<h1>Listing service_data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @service_data.each do |service_datum| %>
+      <tr>
+        <td><%= link_to 'Show', service_datum %></td>
+        <td><%= link_to 'Edit', edit_service_datum_path(service_datum) %></td>
+        <td><%= link_to 'Destroy', service_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service datum', new_service_datum_path %>

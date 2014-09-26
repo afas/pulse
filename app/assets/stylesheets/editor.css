@@ -1,0 +1,150 @@
+form {
+    margin-top: 25px;
+}
+
+#error_explanation h3 {
+    padding-left: 218px;
+    color: #ffffff;
+}
+
+#error_explanation ul {
+    padding-bottom: 30px;
+    padding-left: 200px;
+    list-style: decimal;
+    margin: 0;
+}
+
+#error_explanation ul li {
+    padding-bottom: 20px;
+    float:  none;
+    border: none;
+}
+
+.field i {
+    padding-left: 220px;
+    font-size: 11px;
+}
+
+.field {
+    padding-bottom: 20px;
+}
+
+.field label {
+    color: #005E8D;
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.field .short {
+    width: 620px;
+    height: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    color: #505050;
+}
+
+.field input {
+    width: 500px;
+    height: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    color: #505050;
+}
+
+.field input[type='checkbox'] {
+    width: auto;
+    height: auto;
+}
+
+.field input[type='file'] {
+
+    width: auto;
+    height: 45px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 21px;
+    background: #005E8D;
+    border: 0px;
+    border-radius: 2px;
+
+}
+
+.field select {
+    max-width: 300px;
+}
+
+.field img {
+    vertical-align: bottom;
+}
+
+.without-label input, .without-label textarea {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #505050;
+    overflow-y: hidden;
+}
+
+.without-label .title {
+    font: 36px/43px "PT Serif",serif;
+    color: #000000;
+}
+
+.without-label .subtitle {
+    font-family: 'Proxima Nova Light', Helvetica, Arial, Sans-Serif;
+    font-size: 1.5em;
+    color: #666665;
+    height: 70px;
+}
+
+.without-label .body {
+    height: 200px;
+    color: #333332;
+}
+
+.actions {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.button_to div {
+    text-align: center;
+}
+
+.actions input[type='submit'], .button_to input[type='submit'] {
+    background: none repeat scroll 0 0 #005E8D;
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    height: 45px;
+    padding: 0 21px;
+    text-align: center;
+    width: auto;
+}
+
+.editor {
+}
+
+.editor h1 {
+    margin-left: 215px;
+
+}
+
+.field_with_errors {
+    display: inline;
+}
+
+.devise-links {
+    margin-left: 220px;
+}
