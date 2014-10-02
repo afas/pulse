@@ -1,0 +1,1143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cards>
+  <card>
+    <Number>43</Number>
+    <System>
+      <Name>&quot;10 Октябрь&quot;, филиал</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>организация закрыта</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Form>Представительство, филиал, подразделение</Form>
+      <FullName>Филиал &quot;10 Октябрь&quot; ЗАО &quot;ЛегПромПрогресс&quot;</FullName>
+      <AAddress>
+        <Address>156002, РФ, г. Кострома, ул. Островского, 57
+          <Rem>физический</Rem>
+          <Index>156002</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Островского, 57</Concrete>
+        </Address>
+      </AAddress>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Денисов Руфим Васильевич (м)
+            <Name>Денисов Руфим Васильевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: одежда, обувь (производство)
+          <Name>продукция: одежда, обувь</Name>
+          <Type>производство</Type>
+        </Work>
+      </AWork>
+    </Link>
+  </card>
+  <card>
+    <Number>676</Number>
+    <System>
+      <Name>&quot;1 отряд Федеральной противопожарной службы по Костромской области&quot;</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер 9</Name>
+      </Remark>
+      <Form>Федеральное государственное (бюджетное, казённое, автономное) учреждение</Form>
+      <OfficialName>ФГКУ &quot;1 ОФПС по Костромской области&quot;</OfficialName>
+      <FullName>Федеральное государственное казённое учреждение &quot;1 отряд Федеральной противопожарной службы по Костромской области&quot;</FullName>
+      <AAddress>
+        <Address>156019, РФ, г. Кострома, ул. Мира, 21
+          <Rem>физический</Rem>
+          <Index>156019</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Мира, 21</Concrete>
+        </Address>
+      </AAddress>
+      <Prev>
+        <XRef>Главное управление МЧС России по Костромской области
+          <Table>Сведения об организациях. Костромская область</Table>
+          <Number>860</Number>
+        </XRef>
+        <Rem>учреждение подведомственное</Rem>
+      </Prev>
+      <ARegime>
+        <Regime>
+          <After>администрация</After>
+          <ATime>
+            <Time>ПН - ПТ: 08:00 - 17:00, перерыв: 12:00 - 13:00
+              <Days>31</Days>
+              <HourS>8</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>17</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>12</BreakHourS>
+              <BreakMinuteS>0</BreakMinuteS>
+              <BreakHourPo>13</BreakHourPo>
+              <BreakMinutePo>0</BreakMinutePo>
+            </Time>
+            <Time>СБ, ВС: выходной
+              <Days>96</Days>
+              <HourS>253</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>17</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>12</BreakHourS>
+              <BreakMinuteS>0</BreakMinuteS>
+              <BreakHourPo>13</BreakHourPo>
+              <BreakMinutePo>0</BreakMinutePo>
+            </Time>
+          </ATime>
+        </Regime>
+        <Regime>
+          <After>дежурный</After>
+          <ATime>
+            <Time>ПН - ВС: круглосуточно
+              <Days>127</Days>
+              <HourS>254</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>17</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+              <BreakMinuteS>0</BreakMinuteS>
+              <BreakHourPo>13</BreakHourPo>
+              <BreakMinutePo>0</BreakMinutePo>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>начальник отряда</Post>
+          <FIO>Мальцев Алексей Владимирович (м)
+            <Name>Мальцев Алексей Владимирович</Name>
+            <Gender>м</Gender>
+          </FIO>
+          <APhone>
+            <Phone>(4942) 22-60-92 (тел)
+              <Code>4942</Code>
+              <Number>226092</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+        <Human>
+          <Post>заместитель начальника по кадровой работе</Post>
+          <FIO>Шутов Сергей Александрович (м)
+            <Name>Шутов Сергей Александрович</Name>
+            <Gender>м</Gender>
+          </FIO>
+          <APhone>
+            <Phone>(4942) 22-96-66 (тел)
+              <Code>4942</Code>
+              <Number>229666</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+        <Human>
+          <Post>заместитель начальника</Post>
+          <FIO>Громов Андрей Алексеевич (м)
+            <Name>Громов Андрей Алексеевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>заместитель начальника по материально-техническому обеспечению</Post>
+          <FIO>Жеребов Александр Алексеевич (м)
+            <Name>Жеребов Александр Алексеевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>дежурный</Post>
+          <APhone>
+            <Phone>(4942) 22-61-45 (тел)
+              <Code>4942</Code>
+              <Number>226145</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>федеральные и государственные органы: прочее (услуги)
+          <Name>федеральные и государственные органы: прочее</Name>
+          <Type>услуги</Type>
+        </Work>
+        <Work>аварийная, спасательная, экстренная служба (услуги)
+          <Name>аварийная, спасательная, экстренная служба</Name>
+          <Type>услуги</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>тушение пожаров и связанные с ними аварийно-спасательные работы в населённых пунктах</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>1009</Number>
+    <System>
+      <Name>&quot;100 видов чая&quot;</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>организация закрыта</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <OfficialName>&quot;100 видов чая&quot;</OfficialName>
+      <AAddress>
+        <Address>156013, РФ, г. Кострома, ул. Галичская, 100
+          <Rem>физический</Rem>
+          <Index>156013</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Галичская, 100</Concrete>
+        </Address>
+      </AAddress>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Аверин Александр Владимирович (м)
+            <Name>Аверин Александр Владимирович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: продукты питания, напитки, табак (торговля)
+          <Name>продукция: продукты питания, напитки, табак</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+    </Link>
+  </card>
+  <card>
+    <Number>2320</Number>
+    <System>
+      <Name>&quot;1000 мелочей&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер10</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Шаров Геннадий Дмитриевич</OfficialName>
+      <AltName>Магазин &quot;1000 мелочей&quot;</AltName>
+      <FullName>ИП Шаров Геннадий Дмитриевич</FullName>
+      <Year>1993</Year>
+      <AAddress>
+        <Address>156014, РФ, г. Кострома, проезд Давыдовский 6-й, 21
+          <Rem>физический</Rem>
+          <Index>156014</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>проезд Давыдовский 6-й, 21</Concrete>
+        </Address>
+      </AAddress>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ПТ: 08:00 - 19:00
+              <Days>31</Days>
+              <HourS>8</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>СБ, ВС: 09:00 - 18:00
+              <Days>96</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>18</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Шаров Геннадий Дмитриевич (м)
+            <Name>Шаров Геннадий Дмитриевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+          <APhone>
+            <Phone>(4942) 41-13-12 (тел)
+              <Code>4942</Code>
+              <Number>411312</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Терюшков Николай Васильевич (м)
+            <Name>Терюшков Николай Васильевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Забродин Дмитрий Владимирович (м)
+            <Name>Забродин Дмитрий Владимирович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>главный бухгалтер</Post>
+          <APhone>
+            <Phone>(4942) 41-41-44 (тел)
+              <Code>4942</Code>
+              <Number>414144</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+        <Human>
+          <Post>магазин</Post>
+          <APhone>
+            <Phone>(4942) 22-05-16 (тел)
+              <Code>4942</Code>
+              <Number>220516</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: материалы строительные (торговля)
+          <Name>продукция: материалы строительные</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: изделия хозяйственно-бытового назначения (торговля)
+          <Name>продукция: изделия хозяйственно-бытового назначения</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>торговля: материалы строительные</Text>
+        <Text>торговля: материалы крепёжные</Text>
+        <Text>торговля: сантехника</Text>
+        <Text>торговля: электроинструменты</Text>
+        <Text>торговля: изделия электроустановочные</Text>
+        <Text>торговля: продукция кабельная</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>2321</Number>
+    <System>
+      <Name>&quot;1000 мелочей&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер10</Name>
+      </Remark>
+      <Form>Представительство, филиал, подразделение</Form>
+      <FullName>Магазин &quot;1000 мелочей&quot;</FullName>
+      <Year>2000</Year>
+      <AAddress>
+        <Address>156014, РФ, г. Кострома, проезд Давыдовский 6-й, 16
+          <Rem>физический</Rem>
+          <Index>156014</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>проезд Давыдовский 6-й, 16</Concrete>
+        </Address>
+      </AAddress>
+      <Prev>
+        <XRef>&quot;1000 мелочей&quot;, магазин
+          <Table>Сведения об организациях. Костромская область</Table>
+          <Number>2320</Number>
+        </XRef>
+        <Rem>подразделение</Rem>
+      </Prev>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ПТ: 09:00 - 19:00
+              <Days>31</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>СБ: 09:00 - 18:00
+              <Days>32</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>18</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>ВС: 09:00 - 16:00
+              <Days>64</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>16</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Шаров Геннадий Дмитриевич (м)
+            <Name>Шаров Геннадий Дмитриевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Терешков Николай Васильевич (м)
+            <Name>Терешков Николай Васильевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Забродин Дмитрий Владимирович (м)
+            <Name>Забродин Дмитрий Владимирович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>главный бухгалтер</Post>
+          <APhone>
+            <Phone>(4942) 41-41-44 (тел)
+              <Code>4942</Code>
+              <Number>414144</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+        <Human>
+          <Post>для контактов</Post>
+          <APhone>
+            <Phone>(4942) 22-55-01 (тел)
+              <Code>4942</Code>
+              <Number>225501</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+            <Phone>(4942) 41-12-13 (тел)
+              <Code>4942</Code>
+              <Number>411213</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: материалы строительные (торговля)
+          <Name>продукция: материалы строительные</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: оборудование осветительное, лампы, кабели и провода изолированные (торговля)
+          <Name>продукция: оборудование осветительное, лампы, кабели и провода изолированные</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>торговля: товары сантехнические</Text>
+        <Text>торговля: товары электрические</Text>
+        <Text>торговля: сухие строительные смеси</Text>
+        <Text>торговля: крепёжные изделия</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>3549</Number>
+    <System>
+      <Name>&quot;1000 MHz&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>организация закрыта</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер1</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Дементьев Михаил Вячеславович</OfficialName>
+      <AltName>Магазин &quot;1000 MHz&quot;</AltName>
+      <FullName>ИП Дементьев Михаил Вячеславович</FullName>
+      <AAddress>
+        <Address>156000, РФ, г. Кострома, Пряничные Ряды, помещ. 265
+          <Rem>физический</Rem>
+          <Index>156000</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>Пряничные Ряды, помещ. 265</Concrete>
+        </Address>
+      </AAddress>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Дементьев Михаил Вячеславович (м)
+            <Name>Дементьев Михаил Вячеславович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: компьютерная и офисная техника, материалы расходные (торговля)
+          <Name>продукция: компьютерная и офисная техника, материалы расходные</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+    </Link>
+  </card>
+  <card>
+    <Number>7081</Number>
+    <System>
+      <Name>&quot;1001 Тур&quot;, сеть туристических агентств</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер 4</Name>
+      </Remark>
+      <Form>Общество с ограниченной ответственностью</Form>
+      <OfficialName>&quot;1001 Тур Кострома&quot;</OfficialName>
+      <AltName>Сеть туристических агентств &quot;1001 Тур&quot;</AltName>
+      <FullName>ООО &quot;1001 Тур Кострома&quot;</FullName>
+      <Year>2007</Year>
+      <Count>5</Count>
+      <InetSite>www.1001tur.ru</InetSite>
+      <AAddress>
+        <Address>156000, РФ, г. Кострома, Советская, 51-б
+          <Rem>физический</Rem>
+          <Index>156000</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>Советская, 51-б</Concrete>
+        </Address>
+      </AAddress>
+      <ABank>
+        <Bank>&quot;Конфидэнс Банк&quot;, операционный офис &quot;Костромской&quot;
+          <Table>Сведения об организациях. Костромская область</Table>
+          <Number>9998</Number>
+        </Bank>
+      </ABank>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ПТ: 10:00 - 19:00
+              <Days>31</Days>
+              <HourS>10</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>СБ: 10:00 - 15:00
+              <Days>32</Days>
+              <HourS>10</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>15</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>ВС: выходной
+              <Days>64</Days>
+              <HourS>253</HourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Белова Ирина Сергеевна (ж)
+            <Name>Белова Ирина Сергеевна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>главный бухгалтер</Post>
+          <FIO>Ольнева Наталья Сергеевна (ж)
+            <Name>Ольнева Наталья Сергеевна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>для контактов</Post>
+          <APhone>
+            <Phone>(4942) 47-22-77 (тел)
+              <Code>4942</Code>
+              <Number>472277</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+            <Phone>(4942) 47-10-01 (тел)
+              <Code>4942</Code>
+              <Number>471001</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+            <Phone>905-153-39-40 (моб)
+              <Number>9051533940</Number>
+              <NumberType>федеральный</NumberType>
+              <Type>моб</Type>
+            </Phone>
+          </APhone>
+          <AEMail>
+            <EMail>1001kostroma@mail.ru</EMail>
+          </AEMail>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>культура и отдых: туристическое агентство (услуги)
+          <Name>культура и отдых: туристическое агентство</Name>
+          <Type>услуги</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>услуги туристические в Костроме</Text>
+        <Text>туры экскурсионные по России, Европе (визовая поддержка)</Text>
+        <Text>туры экскурсионные для детей, молодёжи</Text>
+        <Text>туры экскурсионные корпоративные</Text>
+        <Text>отдых пляжный в России и за рубежом</Text>
+        <Text>отдых с лечением в России и за рубежом</Text>
+        <Text>доставка в аэропорт</Text>
+        <Text>подарочные сертификаты</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>7318</Number>
+    <System>
+      <Name>&quot;100 одёжек&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер10</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Грозовский Александр Тарасович</OfficialName>
+      <AltName>Магазин &quot;100 одёжек&quot;</AltName>
+      <FullName>ИП Грозовский Александр Тарасович</FullName>
+      <AAddress>
+        <Address>156013, РФ, г. Кострома, ул. Калиновская, 42, ТЦ &quot;Калиновский рынок&quot;
+          <Rem>физический</Rem>
+          <Index>156013</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Калиновская, 42, ТЦ &quot;Калиновский рынок&quot;</Concrete>
+        </Address>
+      </AAddress>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ВС: 09:00 - 19:00
+              <Days>127</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Грозовский Александр Тарасович (м)
+            <Name>Грозовский Александр Тарасович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Шустова Людмила Сергеевна (ж)
+            <Name>Шустова Людмила Сергеевна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>для контактов</Post>
+          <APhone>
+            <Phone>(4942) 64-89-79 (тел)
+              <Code>4942</Code>
+              <Number>648979</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: одежда, обувь (торговля)
+          <Name>продукция: одежда, обувь</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: изделия текстильные и швейные, кроме одежды (торговля)
+          <Name>продукция: изделия текстильные и швейные, кроме одежды</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: изделия галантерейные, кожгалантерейные (торговля)
+          <Name>продукция: изделия галантерейные, кожгалантерейные</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>торговля: одежда мужская, женская, детская</Text>
+        <Text>торговля: изделия галантерейные из кожи, зонты, сумки, ремни</Text>
+        <Text>торговля: пледы, полотенца, тапочки</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>7319</Number>
+    <System>
+      <Name>&quot;100 одёжек&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>организация закрыта</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер1</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Грозовский Александр Тарасович</OfficialName>
+      <AltName>Магазин &quot;100 одёжек&quot;</AltName>
+      <FullName>ИП Грозовский Александр Тарасович</FullName>
+      <AAddress>
+        <Address>156016, РФ, г. Кострома, ул. Индустриальная, 14
+          <Rem>физический</Rem>
+          <Index>156016</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Индустриальная, 14</Concrete>
+        </Address>
+      </AAddress>
+      <AHuman>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Грозовский Александр Тарасович (м)
+            <Name>Грозовский Александр Тарасович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: одежда, обувь (торговля)
+          <Name>продукция: одежда, обувь</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+    </Link>
+  </card>
+  <card>
+    <Number>7320</Number>
+    <System>
+      <Name>&quot;100 одёжек&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер10</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Грозовский Александр Тарасович</OfficialName>
+      <AltName>Магазин &quot;100 одёжек&quot;</AltName>
+      <FullName>ИП Грозовский Александр Тарасович</FullName>
+      <AAddress>
+        <Address>156022, РФ, г. Кострома, ул. Голубкова, 16
+          <Rem>физический</Rem>
+          <Index>156022</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Голубкова, 16</Concrete>
+        </Address>
+      </AAddress>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ПТ: 10:00 - 19:00
+              <Days>31</Days>
+              <HourS>10</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>СБ, ВС: 10:00 - 18:00
+              <Days>96</Days>
+              <HourS>10</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>18</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Грозовский Александр Тарасович (м)
+            <Name>Грозовский Александр Тарасович</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>предприниматель</Post>
+          <FIO>Шустова Людмила Сергеевна (ж)
+            <Name>Шустова Людмила Сергеевна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>для контактов</Post>
+          <APhone>
+            <Phone>(4942) 43-03-22 (тел)
+              <Code>4942</Code>
+              <Number>430322</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: одежда, обувь (торговля)
+          <Name>продукция: одежда, обувь</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: изделия текстильные и швейные, кроме одежды (торговля)
+          <Name>продукция: изделия текстильные и швейные, кроме одежды</Name>
+          <Type>торговля</Type>
+        </Work>
+        <Work>продукция: изделия галантерейные, кожгалантерейные (торговля)
+          <Name>продукция: изделия галантерейные, кожгалантерейные</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>торговля: одежда мужская, женская, детская</Text>
+        <Text>торговля: изделия галантерейные из кожи, зонты, сумки, ремни</Text>
+        <Text>торговля: пледы, полотенца, тапочки</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>7811</Number>
+    <System>
+      <Name>&apos;&apos;De Luxe&apos;&apos;, центр красоты</Name>
+      <NameWords>&quot;Де Люкс&quot;</NameWords>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер10</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Шатунова Татьяна Николаевна</OfficialName>
+      <AltName>Центр красоты &apos;&apos;De Luxe&apos;&apos;</AltName>
+      <FullName>ИП Шатунова Татьяна Николаевна</FullName>
+      <AAddress>
+        <Address>157500, РФ, Костромская обл., Шарьинский р-н, г. Шарья, ул. Чапаева, 13
+          <Rem>физический</Rem>
+          <Index>157500</Index>
+          <Local>РФ, Костромская обл., Шарьинский р-н, г. Шарья</Local>
+          <Concrete>ул. Чапаева, 13</Concrete>
+        </Address>
+      </AAddress>
+      <ABank>
+        <Bank>&quot;Сбербанк России&quot;, костромское отделение N 8640
+          <Table>Сведения об организациях. Костромская область</Table>
+          <Number>1565</Number>
+        </Bank>
+      </ABank>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - СБ: 09:00 - 19:00, перерыв: 13:00 - 14:00
+              <Days>63</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>19</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>13</BreakHourS>
+              <BreakMinuteS>0</BreakMinuteS>
+              <BreakHourPo>14</BreakHourPo>
+              <BreakMinutePo>0</BreakMinutePo>
+            </Time>
+            <Time>ВС: 09:00 - 15:00
+              <Days>64</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>15</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>руководитель</Post>
+          <FIO>Шатунова Татьяна Николаевна (ж)
+            <Name>Шатунова Татьяна Николаевна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+          <APhone>
+            <Phone>(49449) 5-17-78 (тел)
+              <Code>49449</Code>
+              <Number>51778</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>бытовые и сервисные службы: парикмахерская, салон (услуги)
+          <Name>бытовые и сервисные службы: парикмахерская, салон</Name>
+          <Type>услуги</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>услуги парикмахерские</Text>
+        <Text>маникюр</Text>
+        <Text>услуги косметического кабинета</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>14116</Number>
+    <System>
+      <Name>&quot;1001 запчасть&quot;, магазин</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>организация закрыта</State>
+      <Actual>1 год</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер8</Name>
+      </Remark>
+      <Form>Общество с ограниченной ответственностью</Form>
+      <OfficialName>&quot;Партнёр&quot;</OfficialName>
+      <AltName>Магазин &quot;1001 запчасть&quot;</AltName>
+      <FullName>ООО &quot;Партнёр&quot;</FullName>
+      <AAddress>
+        <Address>156005, РФ, г. Кострома, ул. Советская, 111
+          <Rem>физический</Rem>
+          <Index>156005</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Советская, 111</Concrete>
+        </Address>
+      </AAddress>
+      <AWork>
+        <Work>продукция: запчасти к автомобилям легковым, грузовым, специальным (торговля)
+          <Name>продукция: запчасти к автомобилям легковым, грузовым, специальным</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+    </Link>
+  </card>
+  <card>
+    <Number>15935</Number>
+    <System>
+      <Name>&quot;048&quot;, дизайн-студия</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>6 месяцев</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер 9</Name>
+      </Remark>
+      <Form>Индивидуальный предприниматель</Form>
+      <OfficialName>Погорелов Александр Николаевич</OfficialName>
+      <AltName>Дизайн-студия &quot;048&quot;</AltName>
+      <FullName>ИП Погорелов Александр Николаевич</FullName>
+      <Year>2007</Year>
+      <InetSite>www.048-desig.ru</InetSite>
+      <AAddress>
+        <Address>156007, РФ, г. Кострома, ул. Ленина, 160
+          <Rem>физический</Rem>
+          <Index>156007</Index>
+          <Local>РФ, г. Кострома</Local>
+          <Concrete>ул. Ленина, 160</Concrete>
+        </Address>
+      </AAddress>
+      <ABank>
+        <Bank>&quot;РОСБАНК&quot;, акционерный коммерческий банк, операционный офис &quot;Костромской&quot;
+          <Table>Сведения об организациях. Костромская область</Table>
+          <Number>4566</Number>
+        </Bank>
+      </ABank>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ПТ: 09:00 - 18:00
+              <Days>31</Days>
+              <HourS>9</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>18</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+            <Time>СБ, ВС: выходной
+              <Days>96</Days>
+              <HourS>253</HourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Погорелов Алексей Николаевич (ж)
+            <Name>Погорелов Алексей Николаевич</Name>
+            <Gender>ж</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>для контактов</Post>
+          <APhone>
+            <Phone>905-152-62-94 (моб)
+              <Number>9051526294</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>моб</Type>
+            </Phone>
+            <Phone>906-521-51-50 (моб)
+              <Number>9065215150</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>моб</Type>
+            </Phone>
+          </APhone>
+          <AEMail>
+            <EMail>info@048-desig.ru</EMail>
+          </AEMail>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>бытовые и сервисные службы: фотография (услуги)
+          <Name>бытовые и сервисные службы: фотография</Name>
+          <Type>услуги</Type>
+        </Work>
+        <Work>продукция: программное обеспечение, справочная информация (услуги)
+          <Name>продукция: программное обеспечение, справочная информация</Name>
+          <Type>услуги</Type>
+        </Work>
+        <Work>рекламные услуги, разработка стиля, продвижение товаров и продукции (услуги)
+          <Name>рекламные услуги, разработка стиля, продвижение товаров и продукции</Name>
+          <Type>услуги</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>фотосъёмка</Text>
+        <Text>интернет-реклама</Text>
+        <Text>разработка сайтов, интернет-решений</Text>
+      </AProduct>
+    </Link>
+  </card>
+  <card>
+    <Number>15974</Number>
+    <System>
+      <Name>&quot;1000 и одна сумка&quot;, бутик</Name>
+      <Region>РФ, Костромская область</Region>
+      <State>информация актуализирована</State>
+      <Actual>6 месяцев</Actual>
+    </System>
+    <Link>
+      <Remark>
+        <Name>диспетчер 3</Name>
+      </Remark>
+      <Form>Общество с ограниченной ответственностью</Form>
+      <OfficialName>&quot;Торговый Альянс&quot;</OfficialName>
+      <AltName>Бутик &quot;1000 и одна сумка&quot;</AltName>
+      <FullName>ООО &quot;Торговый Альянс&quot;</FullName>
+      <AAddress>
+        <Address>156530, РФ, Костромская обл., Костромской р-н, п. Караваево, Красносельское ш., 1, ТРЦ &quot;Коллаж&quot;
+          <Rem>физический</Rem>
+          <Index>156530</Index>
+          <Local>РФ, Костромская обл., Костромской р-н, п. Караваево</Local>
+          <Concrete>Красносельское ш., 1, ТРЦ &quot;Коллаж&quot;</Concrete>
+        </Address>
+      </AAddress>
+      <ARegime>
+        <Regime>
+          <ATime>
+            <Time>ПН - ВС: 10:00 - 22:00
+              <Days>127</Days>
+              <HourS>10</HourS>
+              <MinuteS>0</MinuteS>
+              <HourPo>22</HourPo>
+              <MinutePo>0</MinutePo>
+              <BreakHourS>255</BreakHourS>
+            </Time>
+          </ATime>
+        </Regime>
+      </ARegime>
+      <AHuman>
+        <Human>
+          <Post>директор</Post>
+          <FIO>Касаткин Илья Николаевич (м)
+            <Name>Касаткин Илья Николаевич</Name>
+            <Gender>м</Gender>
+          </FIO>
+        </Human>
+        <Human>
+          <Post>управляющий</Post>
+          <FIO>Тихомирова Екатерина Павловна (ж)
+            <Name>Тихомирова Екатерина Павловна</Name>
+            <Gender>ж</Gender>
+          </FIO>
+          <APhone>
+            <Phone>(4942) 49-60-81 (тел)
+              <Code>4942</Code>
+              <Number>496081</Number>
+              <NumberType>прямой городской</NumberType>
+              <Type>тел</Type>
+            </Phone>
+          </APhone>
+          <AEMail>
+            <EMail>ekaterina.tihomirova.1990@bk.ru</EMail>
+          </AEMail>
+        </Human>
+      </AHuman>
+      <AWork>
+        <Work>продукция: изделия галантерейные, кожгалантерейные (торговля)
+          <Name>продукция: изделия галантерейные, кожгалантерейные</Name>
+          <Type>торговля</Type>
+        </Work>
+      </AWork>
+      <AProduct>
+        <Text>торговля: изделия кожгалантерейные: сумки, клатчи, ремни, перчатки</Text>
+        <Text>приём к оплате пластиковых карт</Text>
+      </AProduct>
+    </Link>
+  </card>
+</cards>

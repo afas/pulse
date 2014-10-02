@@ -6,6 +6,6 @@ class WelcomeController < ApplicationController
   # GET /welcomes
   # GET /welcomes.json
   def index
-    @publications = Publication.where(:publication_status => 1)
+    @publications = Publication.where(:publication_status => 2)
   end
 end

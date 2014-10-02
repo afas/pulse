@@ -17,7 +17,6 @@ $(document).ready(function () {
     }
 
 
-
     if ($('#slides').length > 0) {
         $('#slides').slidesjs({
             width: 940,
@@ -30,5 +29,10 @@ $(document).ready(function () {
         $("#region .region-list").toggleClass("visible");
     });
 
+    $("#region-list li a").on("click", function () {
+        $("#region span").html($(this).html());
+
+        $("#region .region-list").toggleClass("visible");
+    });
 
 });

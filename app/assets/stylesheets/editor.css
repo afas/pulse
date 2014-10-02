@@ -48,6 +48,16 @@ form {
     color: #505050;
 }
 
+.field #user_about {
+    width: 500px;
+    height: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    color: #505050;
+}
+
 .field input {
     width: 500px;
     height: 30px;

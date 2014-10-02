@@ -173,6 +173,7 @@ ul {
 
 #region-list li {
     line-height: 23px;
+    width: 190px;
 }
 
 .visible {
@@ -371,7 +372,7 @@ ul {
 
 .bucket-publications li:nth-child(odd) .bucket-item {
     background: none repeat scroll 0 0 #f3f2ef;
-    height: 368px;
+    height: 306px;
     padding: 26px;
     width: 253px;
 }
@@ -380,7 +381,7 @@ ul {
     border-bottom: 6px double #f3f2ef;
     border-right: 6px double #f3f2ef;
     border-top: 6px double #f3f2ef;
-    height: 408px;
+    height: 358px;
     width: 629px;
 }
 
@@ -388,7 +389,7 @@ ul {
     border-bottom: 6px double #f3f2ef;
     border-left: 6px double #f3f2ef;
     border-top: 6px double #f3f2ef;
-    height: 356px;
+    height: 306px;
     padding: 26px;
     width: 247px;
 }
@@ -422,7 +423,7 @@ ul {
 
 .bucket-publications img {
     width: 635px;
-    height: 420px;
+    height: 358px;
 }
 
 /* FOOTER */
