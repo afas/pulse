@@ -9,7 +9,7 @@ class CreatePublications < ActiveRecord::Migration
       # t.datetime :date_start
       # t.datetime :date_end
       t.date :date_start
-      t.time :time_start
+      t.time :time_start, :default => nil
       t.integer :author_id
       t.datetime :date_publish
       t.datetime :date_archive

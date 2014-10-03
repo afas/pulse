@@ -4,7 +4,6 @@ class CreateServiceData < ActiveRecord::Migration
       t.integer :publication_id
       t.string :title
       t.string :image
-
       t.timestamps
     end
   end

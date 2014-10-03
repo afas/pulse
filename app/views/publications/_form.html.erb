@@ -64,21 +64,12 @@
       <%= f.label :category %>
       <%= f.collection_select(:category, Category.collection, :code, :name) %>
     </div>
-
     <%= f.fields_for :publication_attachments do |p| %>
         <div class="field">
           <%= p.label :image %>
           <%= p.file_field :image, :multiple => true, name: "publication_attachments[image][]" %>
         </div>
     <% end %>
-
-    <%= f.fields_for :service_datums do |p| %>
-        <div class="field">
-          <%= p.label :image %>
-          <%= p.file_field :image, :multiple => true, name: "service_datums[image][]" %>
-        </div>
-    <% end %>
-
     <div class="field without-label">
       <%= f.text_area :title, :class => :title %>
     </div>
@@ -88,12 +79,19 @@
     <div class="field without-label">
       <%= f.text_area :body, :class => :body %>
     </div>
-    <div class="field without-label">
-      <%= f.text_area :comment, :class => :body %>
-    </div>
     <div class="field">
       <%= f.label :publication_status %>
       <%= f.collection_select(:publication_status, Status.collection(current_user.editor?), :code, :name) %>
+    </div>
+    <%= f.fields_for :service_datums do |p| %>
+        <div class="field">
+          <%= p.label :image %>
+          <%= p.file_field :image, :multiple => true, name: "service_datums[image][]" %>
+        </div>
+    <% end %>
+    <div class="field">
+      <%= f.label :comment %>
+      <%= f.text_area :comment, :class => :short %>
     </div>
     <div class="actions">
       <%= f.submit %>

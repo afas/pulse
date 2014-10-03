@@ -7,12 +7,12 @@ class ImageUploader < CarrierWave::Uploader::Base
   process convert: 'jpg'
   process resize_to_fill: [940, 530]
 
-  version :slider do
-    process resize_to_fill: [940, 635]
-  end
+  # version :slider do
+  #   process resize_to_fill: [940, 530]
+  # end
 
   version :list do
-    process resize_to_fill: [635, 420]
+    process resize_to_fill: [635, 358]
   end
 
   def store_dir
