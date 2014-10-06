@@ -374,7 +374,7 @@ ul {
     background: none repeat scroll 0 0 #f3f2ef;
     height: 306px;
     padding: 26px;
-    width: 253px;
+    width: 273px;
 }
 
 .bucket-publications li:nth-child(even) img {
@@ -382,7 +382,7 @@ ul {
     border-right: 6px double #f3f2ef;
     border-top: 6px double #f3f2ef;
     height: 358px;
-    width: 629px;
+    width: 609px;
 }
 
 .bucket-publications li:nth-child(even) .bucket-item {
@@ -391,7 +391,7 @@ ul {
     border-top: 6px double #f3f2ef;
     height: 306px;
     padding: 26px;
-    width: 247px;
+    width: 267px;
 }
 
 /*.bucket-publications li:hover .bucket-item .top,*/
@@ -422,7 +422,7 @@ ul {
 }
 
 .bucket-publications img {
-    width: 635px;
+    width: 615px;
     height: 358px;
 }
 

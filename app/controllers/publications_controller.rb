@@ -13,19 +13,19 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def user_publications
-    @publications = Publication.where("publication_status <> ? and author_id < ?", 3, params[:id])
+    @publications = Publication.where("publication_status < ? && author_id = ?", 3, params[:id])
   end
 
   def user_drafts
-    @publications = Publication.where("publication_status = ? and author_id = ?", 4, params[:id])
+    @publications = Publication.where("publication_status = ? && author_id = ?", 4, params[:id])
   end
 
   def user_ready
-    @publications = Publication.where("publication_status = ? and author_id = ?", 5, params[:id])
+    @publications = Publication.where("publication_status = ? && author_id = ?", 5, params[:id])
   end
 
   def user_rejected
-    @publications = Publication.where("publication_status = ? and author_id = ?", 3, params[:id])
+    @publications = Publication.where("publication_status = ? && author_id = ?", 3, params[:id])
   end
 
   def by_category
