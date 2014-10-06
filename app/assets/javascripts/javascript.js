@@ -20,7 +20,7 @@ $(document).ready(function () {
     if ($('#slides').length > 0) {
         $('#slides').slidesjs({
             width: 940,
-            height: 530,
+            height: 547,
             navigation: false
         });
     }
@@ -31,7 +31,6 @@ $(document).ready(function () {
 
     $("#region-list li a").on("click", function () {
         $("#region span").html($(this).html());
-
         $("#region .region-list").toggleClass("visible");
     });
 

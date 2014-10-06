@@ -6,11 +6,6 @@ class ServiceDataUploader < CarrierWave::Uploader::Base
 
   process convert: 'jpg'
 
-  # process resize_to_fill: [940, 940]
-  # version :slider do
-  #   process resize_to_fill: [940, 940]
-  # end
-
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
