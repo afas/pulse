@@ -138,6 +138,6 @@ class PublicationsController < ApplicationController
 
   def publication_params
     # params.require(:publication).permit(:scale, :region, :address, :latitude, :longitude, :date_start, :date_end, :author_id, :publication_status, :date_publish, :date_archive, :publisher_id, :publication_type, :category, :title, :subtitle, :body, publication_attachments_attributes: [:id, :publication_id, :image, :title])
-    params.require(:publication).permit(:region, :address, :latitude, :longitude, :date_start, :time_start, :author_id, :publication_status, :date_publish, :date_archive, :publisher_id, :publication_type, :category, :title, :subtitle, :body, :comment, publication_attachments_attributes: [:id, :publication_id, :image, :title], service_datums_attributes: [:id, :publication_id, :image, :title])
+    params.require(:publication).permit(:region_id, :pulse_id, :address, :latitude, :longitude, :date_start, :time_start, :author_id, :author, :publication_status, :date_publish, :date_archive, :publisher_id, :publication_type, :category, :title, :subtitle, :body, :comment, publication_attachments_attributes: [:id, :publication_id, :image, :title], service_datums_attributes: [:id, :publication_id, :image, :title])
   end
 end

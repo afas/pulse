@@ -11,7 +11,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: bigFish_dev
+  database: bf_dev
   pool: 5
   username: root
   password: enlightenment
@@ -25,7 +25,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: bigFish_test
+  database: bf_test
   pool: 5
   username: root
   password: enlightenment
@@ -35,7 +35,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: bigFish_production
+  database: bf_production
   pool: 5
   username: root
   password: enlightenment

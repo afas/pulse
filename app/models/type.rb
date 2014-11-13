@@ -2,13 +2,12 @@
 class Type
   attr_accessor :name
   attr_accessor :code
-  #attr_accessor :layout
 
   def self.collection
     list = [
         Type.new(:name => 'Анонс', :code => 1),
         Type.new(:name => 'Репортаж', :code => 2),
-        Type.new(:name => 'Исследование', :code => 3)
+        Type.new(:name => 'Обзор', :code => 3)
     ]
     list
   end

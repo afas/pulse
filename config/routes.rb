@@ -1,5 +1,7 @@
 BigFish::Application.routes.draw do
 
+  resources :regions
+
   resources :service_data
 
   get "my_publications/:id" => "publications#user_publications", :as => :user_publications
@@ -8,8 +10,10 @@ BigFish::Application.routes.draw do
   get "my_rejected/:id" => "publications#user_rejected", :as => :user_rejected
 
   get "page/:short_name" => "pages#short_name", :as => :page_by_short_name
-  get "parser/pulse"
 
+  get "parser/entities"
+  get "parser/events"
+  get "parser/regions"
 
   devise_for :users
 

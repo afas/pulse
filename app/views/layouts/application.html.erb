@@ -25,7 +25,7 @@
       </div>
       <div class="region-list">
         <ul id="region-list">
-          <% Region.collection.each do |region| %>
+          <% Region.published.each do |region| %>
               <%= content_tag :li, link_to(region.name, "#") %>
           <% end %>
         </ul>

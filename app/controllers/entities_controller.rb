@@ -6,7 +6,7 @@ class EntitiesController < ApplicationController
   # GET /entities
   # GET /entities.json
   def index
-    @entities = Entity.all
+    @entities = Entity.page(params[:page]).per(20)
   end
 
   # GET /entities/1

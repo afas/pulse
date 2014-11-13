@@ -35,7 +35,7 @@ end
 
 gem 'cancan'
 gem 'devise'
-gem 'rmagick', :require => 'RMagick'
+gem 'rmagick', require: false
 gem 'carrierwave'
 
 gem 'geocoder'
@@ -47,7 +47,9 @@ gem 'nokogiri'
 
 gem 'proxylocal'
 
-gem 'will_paginate'
-gem 'will_paginate-bootstrap'
+gem 'kaminari'
+
+# gem 'will_paginate'
+# gem 'will_paginate-bootstrap'
 
 # gem 'bootstrap-sass'

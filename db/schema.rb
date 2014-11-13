@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815070020) do
+ActiveRecord::Schema.define(version: 20141113135130) do
 
   create_table "entities", force: true do |t|
     t.integer  "pulse_id"
@@ -40,13 +40,14 @@ ActiveRecord::Schema.define(version: 20140815070020) do
   end
 
   create_table "publications", force: true do |t|
-    t.integer  "region"
+    t.integer  "region_id"
     t.string   "address"
     t.float    "latitude"
     t.float    "longitude"
     t.date     "date_start"
     t.time     "time_start"
     t.integer  "author_id"
+    t.string   "author"
     t.datetime "date_publish"
     t.datetime "date_archive"
     t.integer  "publication_status", default: 4
@@ -59,6 +60,13 @@ ActiveRecord::Schema.define(version: 20140815070020) do
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "pulse_id"
+  end
+
+  create_table "regions", force: true do |t|
+    t.string  "name"
+    t.integer "code"
+    t.boolean "public", default: false
   end
 
   create_table "service_data", force: true do |t|

@@ -2,7 +2,7 @@ class CreatePublications < ActiveRecord::Migration
   def change
     create_table :publications do |t|
       # t.integer :scale
-      t.integer :region
+      t.integer :region_id
       t.string :address
       t.float :latitude
       t.float :longitude
@@ -11,6 +11,7 @@ class CreatePublications < ActiveRecord::Migration
       t.date :date_start
       t.time :time_start, :default => nil
       t.integer :author_id
+      t.string :author
       t.datetime :date_publish
       t.datetime :date_archive
       t.integer :publication_status, :default => 4

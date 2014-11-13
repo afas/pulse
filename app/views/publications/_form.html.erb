@@ -16,8 +16,8 @@
       <%#= f.collection_select(:scale, Scale.collection, :code, :name, :selected => 2) %>
     <!--</div>-->
     <div class="field">
-      <%= f.label :region %>
-      <%= f.collection_select(:region, Region.collection, :code, :name, :selected => 44) %>
+      <%= f.label :region_id %>
+      <%= f.collection_select(:region_id, Region.all, :id, :name) %>
     </div>
     <div class="field">
       <%= f.label :address %>
@@ -36,12 +36,14 @@
       <%#= f.datetime_select :date_end %>
     <!--</div>-->
     <div class="field">
-      <%= f.label :author_id %>
-      <% if @publication.new_record? %>
-          <%= f.collection_select(:author_id, User.all, :id, :email, :value => current_user.id, :promt => false) unless current_user.nil? %>
-      <% else %>
-          <%= f.collection_select(:author_id, User.all, :id, :email, :promt => false) %>
-      <% end %>
+      <%= f.label :author %>
+      <%= f.text_field :author %>
+      <%#= f.label :author_id %>
+      <%# if @publication.new_record? %>
+          <%#= f.collection_select(:author_id, User.all, :id, :email, :value => current_user.id, :promt => false) unless current_user.nil? %>
+      <%# else %>
+          <%#= f.collection_select(:author_id, User.all, :id, :email, :promt => false) %>
+      <%# end %>
     </div>
 
     <div class="field">
