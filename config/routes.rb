@@ -11,9 +11,10 @@ BigFish::Application.routes.draw do
 
   get "page/:short_name" => "pages#short_name", :as => :page_by_short_name
 
-  get "parser/entities"
-  get "parser/events"
-  get "parser/regions"
+  # get "parser/entities"
+  # get "parser/events"
+  # get "parser/regions"
+  get "parser/import_all"
 
   devise_for :users
 

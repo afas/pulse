@@ -11,12 +11,12 @@ Page.create(title: "Правила публикации", short_name: "rules")
 Page.create(title: "Рекламодателям", short_name: "ads")
 Page.create(title: "Правообладателям", short_name: "copyright")
 
-Entity.import
-
-Region.import
-Region.where("code in (37, 44, 76)").each do |region|
-  region.public = true
-  region.save
-end
-
-Publication.import
+# Entity.import
+#
+# Region.import
+# Region.where("code in (37, 44, 76)").each do |region|
+#   region.public = true
+#   region.save
+# end
+#
+# Publication.import
