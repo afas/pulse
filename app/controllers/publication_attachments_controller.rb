@@ -1,7 +1,7 @@
 class PublicationAttachmentsController < ApplicationController
   # load_and_authorize_resource
 
-  # before_action :set_publication_attachment, only: [:show, :edit, :update, :destroy]
+  before_action :set_publication_attachment, only: [:show, :edit, :update, :destroy]
 
   # GET /publication_attachments
   # GET /publication_attachments.json

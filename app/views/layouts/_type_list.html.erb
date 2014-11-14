@@ -1,5 +1,5 @@
 <ul class="type-list">
-  <% Type.collection.each do |type| %>
+  <% EventType.collection.each do |type| %>
       <%= content_tag :li, link_to(type.name, "#") %>
   <% end %>
 </ul>

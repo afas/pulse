@@ -3,7 +3,7 @@
       <li>
         <div class="bucket-item">
             <span class="top">
-              <%= content_tag :b, publication.date_publish.strftime('%d.%m.%Y в %H:%M') %><br/><%= content_tag :b, Type.by_code(publication.publication_type) %> в категории <%= content_tag :b, Category.by_code(publication.category) %>
+              <%= content_tag :b, "#{publication.date_start.strftime('%d.%m.%Y')} в #{publication.time_start.strftime('%H:%M')}" %><br/><%= content_tag :b, EventType.by_code(publication.publication_type) %> в категории <%= content_tag :b, Category.by_code(publication.category) %>
             </span>
           <h2>
             <%= link_to publication.title, publication %>

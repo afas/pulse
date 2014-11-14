@@ -3,7 +3,7 @@
 
 <div class="content-normal-width">
 
-  <%= content_tag :b, @publication.date_publish.strftime('%d.%m.%Y в %H:%M') %>, <%= content_tag :b, Type.by_code(@publication.publication_type) %> в категории <%= content_tag :b, Category.by_code(@publication.category) %>
+  <%= content_tag :b, @publication.date_start.strftime('%d.%m.%Y в %H:%M') %>, <%= content_tag :b, EventType.by_code(@publication.publication_type) %> в категории <%= content_tag :b, Category.by_code(@publication.category) %>
   <%= content_tag :h1, @publication.title %>
   <% unless @publication.latitude.nil? %>
       <div id="map"></div>
@@ -29,7 +29,8 @@
 
 <div class="content-normal-width">
   <p>
-    <%= content_tag :b, @publication.author.fullname %><% unless @publication.publisher.nil? %>, в ленте компании <%= content_tag :b, @publication.publisher.name %><% end %>
+    <%= content_tag :b, @publication.author %>
+    <!--<%# unless @publication.publisher.nil? %>, в ленте компании <%#= content_tag :b, @publication.publisher.name %><%# end %>-->
   </p>
 </div>
 
@@ -41,10 +42,10 @@
     <%= content_tag :b, Category.by_code(@publication.category) %>
     <br/>
     Тип публикации:
-    <%= content_tag :b, Type.by_code(@publication.publication_type) %>
+    <%= content_tag :b, EventType.by_code(@publication.publication_type) %>
     <br/>
     В регионе:
-    <%= content_tag :b, Region.by_code(@publication.region) %>
+    <%= content_tag :b, @publication.region.name %>
   </p>
 </div>
 

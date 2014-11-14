@@ -1,8 +1,11 @@
 class Entity < ActiveRecord::Base
   default_scope { order(name: :desc) }
 
-  def self.import_local
-    xml = Nokogiri::XML(File.open("public/import/orgs.xml"))
+  def self.import
+    require 'nokogiri'
+    require 'open-uri'
+
+    xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/orgs.xml"))
     entities = xml.xpath("//card")
     entities.each do |entity|
       pulse_id = entity.xpath("Number").text

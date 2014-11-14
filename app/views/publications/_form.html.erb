@@ -60,7 +60,7 @@
     </div>
     <div class="field">
       <%= f.label :publication_type %>
-      <%= f.collection_select(:publication_type, Type.collection, :code, :name) %>
+      <%= f.collection_select(:publication_type, EventType.collection, :code, :name) %>
     </div>
     <div class="field">
       <%= f.label :category %>

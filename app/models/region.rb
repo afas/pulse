@@ -2,9 +2,11 @@ class Region < ActiveRecord::Base
 
   scope :published, -> { where(public: true) }
 
-  def self.import_local
+  def self.import
     require 'nokogiri'
-    xml = Nokogiri::XML(File.open("public/import/regions.xml"))
+    require 'open-uri'
+
+    xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/regions.xml"))
     regions = xml.xpath("//region")
     regions.each do |region|
       name = region.xpath("Name").text

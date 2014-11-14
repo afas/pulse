@@ -19,15 +19,16 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  def extension_white_list
-    %w(jpg jpeg gif png)
-  end
+  # def extension_white_list
+  #   %w(jpg jpeg gif png)
+  # end
 
   def filename
-    if super.present?
+  #   if super.present?
       @name ||= Digest::MD5.hexdigest(File.dirname(current_path))
-      "#{@name}.#{file.extension.downcase}"
-    end
+      "#{@name}.jpg"
+      # "#{@name}.#{file.extension.downcase}"
+  #   end
   end
 
 end

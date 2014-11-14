@@ -6,6 +6,6 @@ class WelcomeController < ApplicationController
   # GET /welcomes
   # GET /welcomes.json
   def index
-    @publications = Publication.page(params[:page]).per(50)
+    @publications = Publication.page(params[:page]).per(10)
   end
 end

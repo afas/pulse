@@ -30,6 +30,13 @@ class Category
     false
   end
 
+  def self.code_by_name(name)
+    collection.each do |value|
+      return value.code if value.name == name
+    end
+    0
+  end
+
   def initialize(hash)
     self.name = hash[:name]
     self.code = hash[:code]
