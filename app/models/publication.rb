@@ -9,6 +9,10 @@ class Publication < ActiveRecord::Base
 
   belongs_to :region
 
+  has_and_belongs_to_many :entities
+
+  # http://stackoverflow.com/questions/2168442/many-to-many-relationship-with-the-same-model-in-rails
+
   has_many :service_datums, :inverse_of => :publication, :dependent => :destroy
   accepts_nested_attributes_for :service_datums
 
@@ -68,6 +72,31 @@ class Publication < ActiveRecord::Base
       image = event.xpath("Link/image").text
 
       publication.publication_attachments.create(title: title, image: open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/images/#{image}"))
+
+      entities_publications = entity.xpath("Link/AOrg/Address")
+      aaddress.each do |addr|
+        address.push("#{addr.xpath("Index").text}, #{addr.xpath("Local").text}, #{addr.xpath("Concrete").text} (#{addr.xpath("Rem").text})")
+
+
+        publication.entities << Entity.find(xpath("Number"))
+      end
+
+      # <AOrg>
+      # <XRef>&quot;РКЦ ПУЛЬС&quot;
+      # <Table>Сведения об организациях. Костромская область</Table>
+      #     <Number>5500</Number>
+      # </XRef>
+      # </AOrg>
+
+      # <APub>
+      # <XRef>26.09.2014
+      # Новые организации в СИС ПУЛЬС: Костромская область за неделю
+      # <Table>События</Table>
+      #     <Number>2</Number>
+      # </XRef>
+      # </APub>
+
+
       # publication.publication_attachments.create(title: title, image: open("ftp://#{user}:#{password}@#{server}/images/#{image}"))
 
       # address = []

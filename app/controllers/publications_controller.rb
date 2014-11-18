@@ -10,6 +10,21 @@ class PublicationsController < ApplicationController
 
   load_and_authorize_resource
 
+  def by_region
+    @publications = Publication.where(region_id: params[:id]).page(params[:page]).per(10)
+    render :index
+  end
+
+  def by_category
+    @publications = Publication.where(category: params[:id]).page(params[:page]).per(10)
+    render :index
+  end
+
+  def by_type
+    @publications = Publication.where(publication_type: params[:id]).page(params[:page]).per(10)
+    render :index
+  end
+
   # GET /publications
   # GET /publications.json
   def user_publications
@@ -26,10 +41,6 @@ class PublicationsController < ApplicationController
 
   def user_rejected
     @publications = Publication.where("publication_status = ? && author_id = ?", 3, params[:id])
-  end
-
-  def by_category
-    @publications = Publication.all
   end
 
   def next_page

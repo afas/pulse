@@ -9,6 +9,11 @@ BigFish::Application.routes.draw do
   get "my_ready/:id" => "publications#user_ready", :as => :user_ready
   get "my_rejected/:id" => "publications#user_rejected", :as => :user_rejected
 
+
+  get 'by_category/:id' => "publications#by_category", :as => :publications_by_category
+  get 'by_type/:id' => "publications#by_type", :as => :publications_by_type
+  get 'by_region/:id' => "publications#by_region", :as => :publications_by_region
+
   get "page/:short_name" => "pages#short_name", :as => :page_by_short_name
 
   # get "parser/entities"
@@ -21,11 +26,7 @@ BigFish::Application.routes.draw do
   resources :pages
   resources :entities
   resources :publication_attachments
-  resources :publications do
-    collection {
-      get :by_category
-    }
-  end
+  resources :publications
 
   root 'welcome#index'
 

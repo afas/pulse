@@ -15,6 +15,7 @@ class Ability
     else
       can :read, :all
       can :short_name, Page
+      can [:by_category, :by_type, :by_region], Publication
     end
 
     # See the wiki for details:
