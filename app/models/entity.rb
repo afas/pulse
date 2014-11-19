@@ -8,7 +8,8 @@ class Entity < ActiveRecord::Base
     require 'nokogiri'
     require 'open-uri'
 
-    xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/orgs.xml"))
+    # xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/orgs.xml"))
+    xml = Nokogiri::XML(File.open("public/import/orgs.xml"))
     entities = xml.xpath("//card")
     entities.each do |entity|
       pulse_id = entity.xpath("Number").text

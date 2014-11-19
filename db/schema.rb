@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141113135130) do
+ActiveRecord::Schema.define(version: 20141119182516) do
 
   create_table "entities", force: true do |t|
     t.integer  "pulse_id"
@@ -21,6 +21,11 @@ ActiveRecord::Schema.define(version: 20141113135130) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "entities_publications", force: true do |t|
+    t.integer "entity_id"
+    t.integer "publication_id"
   end
 
   create_table "pages", force: true do |t|
@@ -37,6 +42,11 @@ ActiveRecord::Schema.define(version: 20141113135130) do
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "publication_to_publications", force: true do |t|
+    t.integer "publication_from_id"
+    t.integer "publication_to_id"
   end
 
   create_table "publications", force: true do |t|
@@ -64,6 +74,7 @@ ActiveRecord::Schema.define(version: 20141113135130) do
   end
 
   create_table "regions", force: true do |t|
+    t.integer "number"
     t.string  "name"
     t.integer "code"
     t.boolean "public", default: false

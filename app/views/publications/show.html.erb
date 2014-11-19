@@ -44,6 +44,9 @@
     Тип публикации:
     <%= content_tag :b, EventType.by_code(@publication.publication_type) %>
     <br/>
+    Организации упомянутые в публикации:
+    <%= content_tag :b, @publication.entities.first.name %>
+    <br/>
     В регионе:
     <%= content_tag :b, @publication.region.name %>
   </p>

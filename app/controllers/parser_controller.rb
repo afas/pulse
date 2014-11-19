@@ -27,10 +27,6 @@ class ParserController < ApplicationController
   def import_all
     Entity.import
     Region.import
-    Region.where("code in (37, 44, 76)").each do |region|
-      region.public = true
-      region.save
-    end
     Publication.import
 
     render 'welcome/index'

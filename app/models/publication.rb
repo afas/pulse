@@ -4,13 +4,15 @@ class Publication < ActiveRecord::Base
 
   # belongs_to :author, :class_name => 'User'
   # belongs_to :publisher, :class_name => 'Entity'
-  has_many :publication_attachments#, :inverse_of => :publication, :dependent => :destroy
   # accepts_nested_attributes_for :publication_attachments
 
   belongs_to :region
+  # belongs_to :region, primary_key: :code
+  has_many :publication_attachments #, :inverse_of => :publication, :dependent => :destroy
 
   has_and_belongs_to_many :entities
 
+  # has_many :publication_to_publications, :foreign_key => :publication_from_id
   # http://stackoverflow.com/questions/2168442/many-to-many-relationship-with-the-same-model-in-rails
 
   has_many :service_datums, :inverse_of => :publication, :dependent => :destroy
@@ -22,15 +24,9 @@ class Publication < ActiveRecord::Base
     require 'nokogiri'
     require 'open-uri'
 
-    # server = "ftp.sistems.ru"
-    # user = "farforov"
-    # password = "clBuS9Hre"
-
-    #xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/images/event_00000010.jpg"))
-    #xml = Nokogiri::XML(open("ftp://#{user}:#{password}@#{server}/events.xml"))
-    #xml = Nokogiri::XML(open("http://www.kongregate.com/games_for_your_site.xml"))
-
     xml = Nokogiri::XML(open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/events.xml"))
+    # xml = Nokogiri::XML(File.open("public/import/events.xml"))
+
     events = xml.xpath("//event")
     events.each do |event|
       pulse_id = event.xpath("Number").text.to_i
@@ -39,7 +35,7 @@ class Publication < ActiveRecord::Base
       date_start = event.xpath("Link/Dateonly").text.to_date
       time_start = "#{event.xpath("Link/Dateonly").text} #{event.xpath("Link/Timeonly").text}".to_time
 
-      region_id = event.xpath("Link/Region").text.to_i
+      region_id = Region.find_by_number(event.xpath("Link/Region").text).id
 
       category = Category.code_by_name(event.xpath("Link/Vid").text)
       publication_type = EventType.code_by_name(event.xpath("Link/Type").text)
@@ -70,72 +66,11 @@ class Publication < ActiveRecord::Base
       )
 
       image = event.xpath("Link/image").text
-
       publication.publication_attachments.create(title: title, image: open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/images/#{image}"))
+      # publication.publication_attachments.create(title: title, image: open("ftp://farforov:clBuS9Hre@ftp.sistems.ru/images/#{image}"))
 
-      entities_publications = entity.xpath("Link/AOrg/Address")
-      aaddress.each do |addr|
-        address.push("#{addr.xpath("Index").text}, #{addr.xpath("Local").text}, #{addr.xpath("Concrete").text} (#{addr.xpath("Rem").text})")
-
-
-        publication.entities << Entity.find(xpath("Number"))
-      end
-
-      # <AOrg>
-      # <XRef>&quot;РКЦ ПУЛЬС&quot;
-      # <Table>Сведения об организациях. Костромская область</Table>
-      #     <Number>5500</Number>
-      # </XRef>
-      # </AOrg>
-
-      # <APub>
-      # <XRef>26.09.2014
-      # Новые организации в СИС ПУЛЬС: Костромская область за неделю
-      # <Table>События</Table>
-      #     <Number>2</Number>
-      # </XRef>
-      # </APub>
-
-
-      # publication.publication_attachments.create(title: title, image: open("ftp://#{user}:#{password}@#{server}/images/#{image}"))
-
-      # address = []
-      # aaddress = entity.xpath("Link/AAddress/Address")
-      # aaddress.each do |addr|
-      #   address.push("#{addr.xpath("Index").text}, #{addr.xpath("Local").text}, #{addr.xpath("Concrete").text} (#{addr.xpath("Rem").text})")
-      # end
-
-      # description = []
-      # adescription = entity.xpath("Link/AWork/Work")
-      # adescription.each do |desc|
-      #   description.push("#{desc.xpath("Name").text} (#{desc.xpath("Type").text})")
-      # end
-
-
-      # Publication
-
-
-      # t.integer  "region_id"
-      # t.string   "address"
-      # t.float    "latitude"
-      # t.float    "longitude"
-      # t.date     "date_start"
-      # t.time     "time_start"
-      # t.integer  "author_id"
-      # t.string   "author"
-      # t.datetime "date_publish"
-      # t.datetime "date_archive"
-      # t.integer  "publication_status", default: 4
-      # t.integer  "publisher_id"
-      # t.integer  "publication_type"
-      # t.integer  "category"
-      # t.string   "title"
-      # t.string   "subtitle"
-      # t.text     "body"
-      # t.text     "comment"
-      # t.datetime "created_at"
-      # t.datetime "updated_at"
-      # t.integer  "pulse_id"
+      publication_entity = event.xpath("Link/AOrg/XRef/Number").text
+      publication.entities << Entity.find_by_pulse_id(publication_entity)
     end
   end
 
